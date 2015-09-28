@@ -14,8 +14,11 @@ Mark as Test Source todas as subpastas imediatas de test (não as subpastas das 
 Run configurations:
 
 Grails:GA
+
 run-app
 
-(IntelliJ) Para rodar os testes, crie uma configuração do grails com a seguinte linha de comando:
 Cucumber:GA
-grails test-app functional:cucumber
+
+(IntelliJ) Para rodar os testes, crie uma configuração do grails com a seguinte linha de comando:
+
+test-app functional:cucumber
