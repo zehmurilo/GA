@@ -21,4 +21,4 @@ Cucumber:GA
 
 (IntelliJ) Para rodar os testes, crie uma configuração do grails com a seguinte linha de comando:
 
-test-app functional:cucumber
+test-app -Dgeb.env=chrome functional:cucumber
