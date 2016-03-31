@@ -23,7 +23,7 @@ And o atleta de CPF “01234567890” não aparece na lista de atletas cadastrad
 When: eu tento cadastrar o atleta “Pedro” com o CPF “01234567890”
 Then: eu posso ver uma mensagem de sucesso e o nome “Pedro” e CPF “01234567890”
 
-Scenário: Adicionar Atleta no sistema com sucesso
+Scenario: Adicionar Atleta no sistema com sucesso
 Given: o atleta de CPF “01234567890” não está cadastrado no sistema
 When: eu adiciono o atleta de CPF “0123456789”
 Then: O sistema adiciona o atleta com sucesso
