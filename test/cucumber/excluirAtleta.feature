@@ -16,12 +16,12 @@ And o atleta de CPF “01234567890”  não aparece na lista de atletas cadastra
 When: tento excluir o atleta “Pedro” com CPF “01234567890”
 Then: posso ver uma mensagem de erro de exclusão e o nome “Pedro” e CPF “01234567890”
 
-Scenário: Excluir Atleta Novo no Sistema  com sucesso(Controlador)
+Scenario: Excluir Atleta Novo no Sistema  com sucesso(Controlador)
 Give:  o atleta de CPF “01234567890” está cadastrado no sistema
 When: excluo o atleta de CPF “01234567890”
 Then: O sistema remove o atleta com sucesso 
 
-Scenário: Excluir Atleta Novo no Sistema  com fracasso(Controlador)
+Scenario: Excluir Atleta Novo no Sistema  com fracasso(Controlador)
 Give:  o atleta de CPF “01234567890” não está cadastrado no sistema
 When: excluo o atleta de CPF “01234567890”
 Then: O sistema não remove o atleta
