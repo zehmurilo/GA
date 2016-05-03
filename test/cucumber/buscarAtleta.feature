@@ -5,7 +5,7 @@ Feature Buscar Atleta
 
 Scenario Buscar atleta não cadastrado
  Given estou no menu de atletas
- And existe atleta com nome "João Andrade"
+ And não existe atleta com nome "João Andrade"
  When é feita uma busca pelo nome "João Andrade"
  Then é avisado na tela que um erro ocorreu
 
