@@ -12,7 +12,7 @@ Scenario Buscar atleta não cadastrado
 Scenario Buscar atleta não cadastrado
  Given o atleta de nome "João Andrade" não está cadastrado no sistema
  When é feita uma busca pelo nome "João Andrade"
- Then uma mensagem de erro é acionada
+ Then nenhum resultado é retornado
 
 Scenario Buscar atleta cadastrado
  Given estou no menu de atletas
