@@ -3,7 +3,7 @@ import steps.pages.*
 import static cucumber.api.groovy.EN.*
 
 Given(~'^"([^"]*)" está cadastrado no sistema$') { 
-  String name -> addAtleta(name, null, null, null, null)
+  String name -> addAtleta(name, null, null, null)
   assert atletas.findByNome(name) != null
 }
 
