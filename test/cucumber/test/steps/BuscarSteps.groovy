@@ -10,7 +10,7 @@ When(~'^busco pelo atleta de nome "([^"]*)"$') {
 String name -> assert atletas.findByNome(name) != null
 }
 
-Then(~'^nenhum resultado é retornado$') { 
+Then(~'^É retornado datalhes do atleta procurado$') { 
 assert atletas.getInfo(atletas.findByNome(name)) != null
 }
 
