@@ -1,4 +1,5 @@
 import steps.*
+import steps.pages.*
 import static cucumber.api.groovy.EN.*
 
 Given(~'^"([^"]*)" está cadastrado no sistema$') { 
