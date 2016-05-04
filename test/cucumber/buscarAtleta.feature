@@ -18,7 +18,7 @@ Scenario Buscar atleta cadastrado
  Given estou no menu de atletas
  And existe um atleta com nome "Pedro Silva"
  When é feita uma busca pelo nome "Pedro Silva"
- Then é exibido na tela uma relação com informações de "Pedro Silva"
+ Then é exibido na tela informações de "Pedro Silva"
 
 Scenario Buscar atleta cadastrado
  Given "Pedro Silva" está cadastrado no sistema
