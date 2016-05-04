@@ -1,17 +1,17 @@
 import steps.TestDataAndOperations
 import static cucumber.api.groovy.EN.*
 
-Given(~'^o atleta de nome "([^"]*)" não está cadastrado no sistema$') { 
-String name -> jogador = TestDataAndOperations.findByNome(name)
-assert jogador == null
+Given(~'^"([^"]*)" está cadastrado no sistema$') { 
+String name -> addAtleta(name, null, null, null)
+assert atletas.findByNome(name) != null
 }
 
-When(~'^é feita uma busca pelo nome "([^"]*)"$') { 
-String name -> TestDataAndOperations.findByNome(name)
+When(~'^busco pelo atleta de nome "([^"]*)"$') { 
+String name -> assert atletas.findByNome(name) != null
 }
 
 Then(~'^nenhum resultado é retornado$') { 
-return null
+assert atletas.getInfo(atletas.findByNome(name)) != null
 }
 
 Given(~'^estou no menu de atletas e não existe atleta com nome "([^"]*)"$') {
