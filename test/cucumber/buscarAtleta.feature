@@ -1,7 +1,7 @@
 Feature Buscar Atleta
  As a usuário do sistema
  I want Buscar um atleta
- So that eu posso ver os dados de um atleta específico
+ So that eu posso ver os dados de um atleta
 
 Scenario Buscar atleta não cadastrado
  Given estou no menu de atletas
@@ -23,4 +23,4 @@ Scenario Buscar atleta cadastrado
 Scenario Buscar atleta cadastrado
  Given "Pedro Silva" está cadastrado no sistema
  When busco pelo atleta de nome "Pedro Silva"
- Then É retornado datalhes do atleta procurado
+ Then É retornado datalhes do atleta "Pedro Silva"
