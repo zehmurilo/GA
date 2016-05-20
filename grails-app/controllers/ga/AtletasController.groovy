@@ -48,11 +48,13 @@ class AtletasController {
             return
         }
 
+
+
         atletaInstance.delete flush:true
 
         request.withFormat{
             form multipartForm {
-                flash.message = message(code: 'defalt.deleted.message', args: [message(code: 'Atleta.label', default: 'Atleta'),atletaInstace.id])
+                flash.message = message(code: 'defalt.deleted.message', args: [message(code: 'Atleta.label', default: 'Atleta'),atletaInstance.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -63,7 +65,7 @@ class AtletasController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'defalt.deleted.message', args: [message(code: 'Atleta.label', default: 'Atleta'),atletaInstace.id])
+                flash.message = message(code: 'defalt.deleted.message', args: [message(code: 'Atleta.label', default: 'Atleta'),atletaInstance.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NO_CONTENT }

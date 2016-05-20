@@ -13,7 +13,7 @@ Given (~'^O sistema tem um atleta com o CPF "([^"]*)" e o nome "([^"]*)" $'){
 
 }
 
-When(~'^ Eu excluo o atleta de CPF ([^"]*)" $'){
+When(~'^ Eu excluo o atleta de CPF "([^"]*)" $'){
     String cpf -> AtletaTestAndDataOperations.removeAtleta(cpf)
 }
 
