@@ -1,5 +1,9 @@
 package ga
 
+import static org.springframework.http.HttpStatus.*
+import grails.transaction.Transactional
+
+
 class AtletasController {
 
     def index() { }
@@ -72,5 +76,3 @@ class AtletasController {
         }
     }
 }
-
-
