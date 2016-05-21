@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/GA-grailsPlugins"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/asset-pipeline-1.9.6"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/cache-1.1.7"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/cucumber-1.1.0"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.4.0"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/geb-0.9.2"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/hibernate4-4.3.5.5"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.1"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.1.2"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.55"/>
+	<contentEntry url="file://$MODULE_DIR$/target/work/plugins/webxml-1.4.1"/>
+	<lib name="grails-2.4.3" scope="PROVIDED"/>
+</component>

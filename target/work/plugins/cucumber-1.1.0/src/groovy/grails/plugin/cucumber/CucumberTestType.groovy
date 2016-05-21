@@ -16,7 +16,6 @@
 
 package grails.plugin.cucumber
 
-import grails.util.BuildSettings
 import org.codehaus.groovy.grails.test.GrailsTestTypeResult
 import org.codehaus.groovy.grails.test.event.GrailsTestEventPublisher
 import org.codehaus.groovy.grails.test.report.junit.JUnitReportsFactory
