@@ -1,6 +1,6 @@
 import cucumber.api.PendingException
-import gaatleta.AtletaController
-import gaatleta.Atleta
+import ga.AtletaController
+import ga.Atleta
 
 import pages.AtletasPage
 import pages.CreateAtleta
