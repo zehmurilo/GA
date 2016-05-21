@@ -14,8 +14,6 @@
  */
 package grails.plugin.cache
 
-import grails.plugin.cache.CacheEvict
-
 class GrailsCacheAdminService {
 
     static transactional = false
