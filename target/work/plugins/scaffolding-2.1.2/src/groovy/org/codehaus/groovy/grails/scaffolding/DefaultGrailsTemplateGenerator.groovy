@@ -15,7 +15,11 @@
  */
 package org.codehaus.groovy.grails.scaffolding
 
+import groovy.text.SimpleTemplateEngine
+import groovy.text.Template
+
 import org.codehaus.groovy.grails.commons.GrailsDomainClassProperty
+import org.codehaus.groovy.grails.plugins.GrailsPluginManager
 
 /**
  * Default implementation of the generator that generates grails artifacts (controllers, views etc.)

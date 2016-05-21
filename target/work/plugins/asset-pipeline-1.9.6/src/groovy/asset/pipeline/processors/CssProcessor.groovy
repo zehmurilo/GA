@@ -16,6 +16,8 @@
 package asset.pipeline.processors
 
 import asset.pipeline.*
+import java.net.URL
+import java.net.URI
 
 /**
 * This Processor iterates over relative image paths in a CSS file and 

@@ -3,6 +3,8 @@ package org.grails.plugins.tomcat.fork
 import groovy.transform.CompileStatic
 import org.apache.catalina.Context
 import org.apache.catalina.startup.Tomcat
+import org.codehaus.groovy.grails.io.support.Resource
+import org.codehaus.groovy.grails.plugins.GrailsPluginUtils
 import org.grails.plugins.tomcat.InlineExplodedTomcatServer
 
 /**

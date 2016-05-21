@@ -26,6 +26,7 @@ import org.apache.catalina.Loader
 import org.apache.catalina.connector.Connector
 import org.apache.catalina.startup.Tomcat
 import org.apache.coyote.http11.Http11NioProtocol
+import org.apache.tomcat.util.scan.StandardJarScanner
 import org.codehaus.groovy.grails.plugins.GrailsPluginUtils
 import org.grails.plugins.tomcat.fork.ForkedTomcatServer
 
