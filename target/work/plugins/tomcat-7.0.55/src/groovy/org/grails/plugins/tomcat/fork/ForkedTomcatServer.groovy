@@ -25,6 +25,7 @@ import groovy.transform.TypeCheckingMode
 import org.apache.catalina.startup.Tomcat
 import org.codehaus.groovy.grails.cli.fork.*
 import org.codehaus.groovy.grails.plugins.GrailsPluginInfo
+import org.codehaus.groovy.grails.plugins.GrailsPluginUtils
 import org.grails.plugins.tomcat.TomcatKillSwitch
 
 import grails.util.PluginBuildSettings

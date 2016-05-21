@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-  <testsuite errors="0" failures="0" hostname="Hugos-MacBook-Air.local" id="0" name="new book entry" package="" tests="1" time="5.862" timestamp="2015-09-04T16:37:50">
-      <properties />
-
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="new book" time="5.377" />
-
-      <system-out><![CDATA[Feature: new book entry
+<testsuite errors="0" failures="0" hostname="Hugos-MacBook-Air.local" name="new book entry" tests="1" time="5.862" timestamp="2015-09-04T16:37:50">
+  <properties />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="new book" time="5.377" />
+  <system-out><![CDATA[Feature: new book entry
   As a book owner
   I want to add books I own to the book tracker
   so that I do not have to remember them by myself
@@ -16,9 +13,6 @@
     When I add "Specification by Example"          # Book_Steps.groovy:10
     Then I see "Specification by Example"s details # Book_Steps.groovy:14
 ]]></system-out>
-
-      <system-err><![CDATA[
+  <system-err><![CDATA[
 --Output from new book--]]></system-err>
-
-  </testsuite>
-</testsuites>
+</testsuite>
