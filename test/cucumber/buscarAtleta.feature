@@ -1,24 +1,26 @@
-Feature: Buscar Atleta
- As: a usuário do sistema
- I want: Buscar um atleta
- So that: eu posso ver os dados de um atleta específico.
+Feature Buscar Atleta
+ As a usuário do sistema
+ I want Buscar um atleta
+ So that eu posso ver os dados de um atleta
 
-Scenario: Buscar atleta não cadastrado.
- Given: Não existe atleta com nome “João Andrade”.
- When: É feita uma busca pelo nome “João Andrade”.
- Then: Uma mensagem de nome inválido é acionada.
+ Scenario Buscar atleta não cadastrado gui
+  Given estou no menu de atletas
+  And  não existe atleta com cpf "12345678900"
+  When é feita uma busca pelo cpf "12345678900"
+  Then nenhum atleta aparece na tela
 
-Scenario: Buscar atleta não cadastrado.
- Given: Não existe atleta com nome “João Andrade”.
- When: É feita uma busca pelo nome “João Andrade”.
- Then: Uma mensagem dizendo “Erro - Nome Inválido” é exibida na tela.
+ Scenario Buscar atleta não cadastrado
+  Given  o cpf "12345678900" não está cadastrado no sistema
+  When é feita uma busca pelo atleta de cpf "12345678900"
+  Then  nada é retornado
 
-Scenario: Buscar atleta cadastrado
- Given: Existe atleta com nome “Pedro Silva”
- When: É feita uma busca pelo nome “Pedro Silva”
- Then: É exibido na tela uma relação com todas as informações de “Pedro Silva”
+Scenario Buscar atleta cadastrado gui
+ Given estou no menu de atletas
+ And existe atleta com cpf "12345678900"
+ When é feita uma busca pelo cpf "12345678900"
+ Then Aparece na tela o atleta de cpf "12345678900"
 
-Scenario: Buscar atleta cadastrado
- Given: Existe atleta com nome “Pedro Silva”
- When: É feita uma busca pelo nome “Pedro Silva”
- Then: É procurado no sistema as informações relacionadas ao atleta de nome “Pedro Silva”
+Scenario Buscar atleta cadastrado
+ Given  o cpf "12345678900" está cadastrado no sistema
+ When é feita uma busca pelo atleta de cpf "12345678900"
+ Then É retornado informações existentes do atleta de cpf "12345678900"
