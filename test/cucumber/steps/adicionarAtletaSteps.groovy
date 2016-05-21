@@ -42,7 +42,7 @@ def verificaAtleta(String nome, String cpf, AtletaController controlador) {
 }
 
 //web
-Given(~'^Um atleta de CPF "([^"]*)" se encontra cadastrado no sistema$'){ String cpf ->
+Given(~'^Um atleta de CPF "([^"]*)" se encontra cadastrado$'){ String cpf ->
 	to CreateAtleta
 	at CreateAtleta
 	page.createAtleta("Jankaukas", cpf)
