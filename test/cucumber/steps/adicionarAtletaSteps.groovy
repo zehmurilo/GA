@@ -59,7 +59,7 @@ When(~/^Seleciono a opção Adicionar Atleta$/){->
 	at CreateAtleta
 }
 
-And(~/^Tento cadastrar um novo atleta "([^"]*)" com o CPF "([^"]*)"$/){ String nome, cpf ->
+And(~/^Cadastro um novo atleta "([^"]*)" com o CPF "([^"]*)"$/){ String nome, cpf ->
 	to CreateAtleta
 	at CreateAtleta
 	page.verificaAtleta(nome, cpf)
