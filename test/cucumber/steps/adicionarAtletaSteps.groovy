@@ -42,30 +42,30 @@ def verificaAtleta(String nome, String cpf, AtletaController controlador) {
 }
 
 //web
-Given(~'^Um atleta de CPF "([^"]*)" se encontra cadastrado$'){ String cpf ->
+Given(~/^Um atleta de CPF "([^"]*)" se encontra cadastrado$\){ String cpf ->
 	to CreateAtleta
 	at CreateAtleta
 	page.createAtleta("Jankaukas", cpf)
 }
 
-And(~'^Estou no menu Atletas$'){->
+And(~/^Estou no menu Atletas$\){->
 	to AtletasPage
 	at AtletasPage
 }
 
 
-When(~'^Seleciono a opção Adicionar Atleta$'){->
+When(~/^Seleciono a opção Adicionar Atleta$\){->
 	to CreateAtleta
     at CreateAtleta
 }
 
-And(~'^Tento cadastrar um novo atleta "([^"]*)" com o CPF "([^"]*)$'){ String nome, cpf ->
+And(~/^Tento cadastrar um novo atleta "([^"]*)" com o CPF "([^"]*)$\){ String nome, cpf ->
 	to CreateAtleta
 	at CreateAtleta
 	page.verificaAtleta(nome, cpf)
 }
 
-Then(~'Eu posso ver que na página de Atletas o no atleta não foi adicionado$'){->
+Then(~/^Eu posso ver que na página de Atletas o no atleta não foi adicionado$\){->
 	to AtletasPage
 	at AtletasPage
 }
