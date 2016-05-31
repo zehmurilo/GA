@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee9c426-8a1d-47aa-a5d1-7d6d97b793b3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GA-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ga/Atleta.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ga/Atleta.groovy" />
     </list>
     <ignored path="GA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -521,7 +521,7 @@
       <workItem from="1441382040192" duration="2490000" />
       <workItem from="1441385300926" duration="7000" />
       <workItem from="1464721100725" duration="892000" />
-      <workItem from="1464722835943" duration="191000" />
+      <workItem from="1464722835943" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary="teste commit">
       <created>1464721336142</created>
@@ -537,18 +537,25 @@
       <option name="project" value="LOCAL" />
       <updated>1464721394227</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="teste2 commit">
+      <created>1464723110931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1464723110931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9547000" />
+    <option name="totallyTimeSpent" value="9807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.50293684" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.50293684" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -600,7 +607,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="teste commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste commit" />
+    <MESSAGE value="teste2 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="teste2 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
