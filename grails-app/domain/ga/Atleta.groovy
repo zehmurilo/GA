@@ -7,3 +7,5 @@ class Atleta {
     static constraints = {
     }
 }
+
+//jkjgdkf
