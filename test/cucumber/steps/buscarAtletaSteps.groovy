@@ -2,8 +2,8 @@ import steps.*
 import steps.pages.*
 import static cucumber.api.groovy.EN.*
 
-Given(~'^ o cpf "([^"]*)" está cadastrado no sistema$') {
-  String cpf -> createAtleta(null, cpf, null)
+Given(~'^o cpf "([^"]*)" está cadastrado no sistema$') {
+  String cpf -> AtletaTestAndDataOperations.createAtleta(null, cpf, null)
   assert AtletaTestAndDataOperations.findByCpf(cpf) != null
 }
 
@@ -17,20 +17,24 @@ Then(~'^É retornado informações existentes do atleta de cpf "([^"]*)"$') { St
   assert AtletaTestAndDataOperations.getInfo(cpf) != null
 }
 
-Given(~'^estou no menu de atletas e existe atleta com cpf "([^"]*)"$') { String cpf ->
-    to createAtleta
-    at createAtleta
-    page.criarAtleta(null, cpf, null)
-    to atletaPage
+Given(~'^estou no menu de atletas$') { String cpf ->
+    to page.AtletasPage
+    at page.AtletasPage
+}
+
+And(~'^existe atleta com cpf "([^"]*)"$') { String cpf ->
+    to page.CreateAtleta
+    at page.CreateAtleta
+    page.CreateAtleta.cadastrarAtleta(null, cpf)
+    to page.AtletasPage
 }
 
 When(~'^é feita uma busca pelo cpf "([^"]*)"$') { String cpf ->
-    at atletaPage
-    page.buscarAtletaCpf(cpf).select()
+    at page.AtletasPage
+    page.AtletasPage.buscarAtletaCpf(cpf).select()
 }
 
 Then(~'^Aparece na tela o atleta de cpf "([^"]*)"$') { String cpf->
-    at atletaPage
-	assert page.temAtleta(cpf)
+    at page.AtletasPage
+	assert page.AtletasPage.temAtleta(cpf)
 }
-//criar menuAtletaPage, loginPage, selectBuscarAtletaNome
